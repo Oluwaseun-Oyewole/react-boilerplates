@@ -1,14 +1,18 @@
-### Prettier ESlint and husky
+### Prettier, ESlint and Husky config
 
 ```bash
-Note: Vite comes with it's own eslintrc file, so you don't need to run a yarn add -D eslint
+Note: Vite comes with it's own eslintrc file, so you don't need to install eslint
 
 yarn add -D prettier eslint-config-prettier
 create a prettier, prettierignore. Check files for configurations
-yarn husky-init. Check husky for pre-commit configurations
+yarn husky-init. Check the .husky folder for pre-commit configurations
 yarn install.
 modify package.json. Check package.json for configurations.
 ```
+
+### To set up test with jest and React testing library
+
+[Jest & react testing library](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
 
 ### What is React Concurrent Rendering?
 
