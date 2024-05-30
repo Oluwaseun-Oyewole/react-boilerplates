@@ -10,7 +10,7 @@ const Home = () => {
       <article>
         <section>
           <div>
-            <h1>Home Page</h1>
+            <button>Home Page</button>
           </div>
         </section>
       </article>
