@@ -4,6 +4,8 @@ export default function ErrorPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const error: any = useRouteError();
 
+  //TODO: Make a proper error page
+
   return (
     <div
       id="error-page"

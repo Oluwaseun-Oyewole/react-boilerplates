@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import ErrorPage from "../components/custom/error";
 import AuthLayout from "../layouts/auth";
 import DashboardLayout from "../layouts/dashboard";
 import { authenticationRoutes } from "./auth.routes";
@@ -10,7 +11,7 @@ const routes = createBrowserRouter([
   {
     path: Routes.base,
     element: <Home />,
-    //  errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
   {
     path: Routes.auth,

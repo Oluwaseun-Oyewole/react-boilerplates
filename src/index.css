@@ -12,3 +12,21 @@
 body {
   font-family: "Raleway", sans-serif;
 }
+
+.range-container {
+  position: relative;
+  width: 100%;
+}
+.range-input {
+  width: 100%;
+}
+.tickmarks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 25px; /* Adjust based on the height of your input */
+}
+.tickmarks span {
+  font-size: 12px;
+}

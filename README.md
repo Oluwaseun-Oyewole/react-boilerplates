@@ -10,9 +10,9 @@ yarn install.
 modify package.json. Check package.json for configurations.
 ```
 
-### To set up test with jest and React testing library
+### To set up test with vite, jest and React testing library
 
-[Jest & react testing library](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
+[Jest & react testing library](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap){:target="\_blank" rel="noopener"}
 
 ### What is React Concurrent Rendering?
 

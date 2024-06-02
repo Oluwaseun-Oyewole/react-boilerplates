@@ -21,7 +21,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "uri-js": "4.2.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.5",
