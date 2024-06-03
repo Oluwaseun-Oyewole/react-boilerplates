@@ -1,3 +1,12 @@
+### Web accessibility
+
+[WAI-ARIA](https://www.w3.org/WAI/fundamentals/)
+[WAI-ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+
+### To set up test with vite, jest and React testing library
+
+[Jest & react testing library](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap)
+
 ### Prettier, ESlint and Husky config
 
 ```bash
@@ -9,10 +18,6 @@ yarn husky-init. Check the .husky folder for pre-commit configurations
 yarn install.
 modify package.json. Check package.json for configurations.
 ```
-
-### To set up test with vite, jest and React testing library
-
-[Jest & react testing library](https://dev.to/hannahadora/jest-testing-with-vite-and-react-typescript-4bap){:target="\_blank" rel="noopener"}
 
 ### What is React Concurrent Rendering?
 

@@ -17,12 +17,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^1.7.2",
+    "formik": "^2.4.6",
     "identity-obj-proxy": "^3.0.0",
     "jest-environment-jsdom": "^29.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
-    "uri-js": "4.2.2"
+    "uri-js": "4.2.2",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.5",

@@ -30,3 +30,8 @@ body {
 .tickmarks span {
   font-size: 12px;
 }
+
+::-webkit-scrollbar {
+  background: transparent !important;
+  width: 0px !important;
+}

@@ -1,10 +1,15 @@
 import { Outlet } from "react-router-dom";
+import Navigation from "../../components/custom/nav";
+import { dashboardNav } from "../../helper/constants";
 
 const DashboardLayout = () => {
   return (
-    <main className="flex h-screen items-center justify-center">
-      <Outlet />
-    </main>
+    <>
+      <Navigation routes={dashboardNav} />
+      <main className="flex items-center justify-center">
+        <Outlet />
+      </main>
+    </>
   );
 };
 

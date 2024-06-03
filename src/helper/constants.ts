@@ -4,3 +4,14 @@ export const navLinks = [
   { title: "Login", link: Routes.login },
   { title: "Dashboard", link: Routes.dashboard },
 ];
+
+export const loginNav = [
+  { title: "Dashboard", link: Routes.dashboard },
+  { title: "Home", link: Routes.base },
+];
+
+export const dashboardNav = [
+  { title: "Products", link: Routes.products },
+  { title: "Dashboard", link: Routes.dashboard },
+  { title: "Home", link: Routes.base },
+];
