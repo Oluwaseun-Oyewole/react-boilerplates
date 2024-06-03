@@ -1,5 +1,5 @@
 import { Navigate, RouteObject } from "react-router-dom";
-import { Dashboard, Products } from "./lazy";
+import { Albums, Dashboard, Products } from "./lazy";
 import { Routes } from "./routes";
 
 export const dashboardRoutes = () => {
@@ -12,6 +12,10 @@ export const dashboardRoutes = () => {
     {
       path: Routes.products,
       element: <Products />,
+    },
+    {
+      path: Routes.albums,
+      element: <Albums />,
     },
 
     {

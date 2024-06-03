@@ -8,4 +8,5 @@ export const enum Routes {
 
   dashboard = "/dashboard",
   products = "/dashboard/products",
+  albums = "/dashboard/albums",
 }

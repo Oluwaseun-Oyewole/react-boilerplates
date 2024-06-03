@@ -2,34 +2,32 @@ import Loader from "../../../components/custom/loader";
 import { useGetAllTodosQuery } from "../../../redux/store/query";
 import { TodosInterface } from "../../../redux/types";
 import { todoValidationSchema } from "../../../schema/todos";
+// import { useAppSelector } from "../../../store/hook";
 
 const Products = () => {
-  const { data, isLoading } = useGetAllTodosQuery({});
-
-  // for global data instance
-
-  // const { todos } = useAppSelector((state) => state.todos);
+  const { data, isLoading, error } = useGetAllTodosQuery({});
+  // another variation of getting todos directly from your slice. This is approach is useful if you want a common source of truth for your data(i.e todo)
+  // const { todos, loading } = useAppSelector((state) => state.rootReducer.todos);
 
   return (
     <div>
       <h1>All Todos</h1>
+
+      {error instanceof Error && (
+        <div role="alert" aria-atomic="true">
+          <p> {error?.message}</p>
+        </div>
+      )}
       {isLoading ? (
         <Loader />
       ) : (
-        <div>
+        <ul>
           {data?.map((todo: TodosInterface, index: number) => {
             const validTodo = todoValidationSchema.safeParse(todo);
-            if (!validTodo.success) {
-              return <div>No post found!!</div>;
-            }
-            return (
-              <div key={index} className="flex gap-2">
-                <p>{todo.id}</p>
-                {todo?.title}
-              </div>
-            );
+            if (!validTodo.success) return <li>No todo found!!</li>;
+            return <li key={index}>{todo?.title}</li>;
           })}
-        </div>
+        </ul>
       )}
     </div>
   );

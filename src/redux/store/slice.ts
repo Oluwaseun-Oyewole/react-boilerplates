@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { TodoSlice as api } from "./query";
 
 const initialState = {
-  posts: [],
+  todos: [],
   loading: false,
 };
 
@@ -18,7 +18,7 @@ const jobSlice = createSlice({
       api.endpoints.getAllTodos.matchFulfilled,
       (state, action) => {
         state.loading = false;
-        state.posts = action.payload?.data;
+        state.todos = action.payload;
       },
     );
     builder.addMatcher(api.endpoints.getAllTodos.matchRejected, (state) => {

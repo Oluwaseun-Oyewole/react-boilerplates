@@ -12,6 +12,7 @@ export const loginNav = [
 
 export const dashboardNav = [
   { title: "Products", link: Routes.products },
+  { title: "Albums", link: Routes.albums },
   { title: "Dashboard", link: Routes.dashboard },
   { title: "Home", link: Routes.base },
 ];
