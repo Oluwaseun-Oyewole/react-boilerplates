@@ -36,35 +36,37 @@ const LoginFormikForm = () => {
         {(formik) => {
           return (
             <Form>
-              <div
-                className={`flex flex-col ${formik.isValid ? "gap-4" : "gap-2"} w-full`}
-              >
-                <div>
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="email address"
-                    name="email"
-                    value={formik.values.email}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    className="border-[1.5px] border-gray-200 !py-7 pl-12"
-                  />
-                </div>
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="email address"
+                  name="email"
+                  //   value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  className="border-[1.5px] border-gray-200 !py-7 pl-12"
+                />
+                <p role="alert" aria-live="assertive" aria-atomic="true">
+                  {formik.errors.email}
+                </p>
+              </div>
 
-                <div>
-                  <label htmlFor="password">Password:</label>
-                  <input
-                    id="password"
-                    name="password"
-                    value={formik.values.password}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    placeholder="password"
-                    className="border-[1.7px] border-gray-300 !py-7 pl-12"
-                  />
-                </div>
+              <div>
+                <label htmlFor="password">Password:</label>
+                <input
+                  id="password"
+                  name="password"
+                  //   value={formik.values.password}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  placeholder="password"
+                  className="border-[1.7px] border-gray-300 !py-7 pl-12"
+                />
+                <p role="alert" aria-live="assertive" aria-atomic="true">
+                  {formik.errors.password}
+                </p>
               </div>
 
               <button

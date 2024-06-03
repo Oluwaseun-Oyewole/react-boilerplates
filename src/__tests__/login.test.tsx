@@ -84,14 +84,12 @@ describe("Login", () => {
     render(<LoginFormikForm />);
     user.setup();
     const password = await screen.getByLabelText(/password/i);
-    await user.type(password, "Seun");
+    await user.type(password, "Seun", { delay: 1 });
     const email = await screen.getByLabelText(/email/i);
-    await user.type(email, "find@gmail.com");
+    await user.type(email, "find@gmail.com", { delay: 1 });
     await user.click(screen.getByRole("button", { name: /login/i }));
     expect(screen.getByRole("button")).toBeInTheDocument();
-    expect(password).toHaveValue("Seun");
-    // expect(email).toHaveValue("find@gmail.com");
-    // await waitFor(() => expect(password).toHaveValue("Seun"));
-    // await waitFor(() => expect(password).toHaveValue("find@gmail.com"));
+    await waitFor(() => expect(password).toHaveValue("Seun"));
+    await waitFor(() => expect(email).toHaveValue("find@gmail.com"));
   });
 });
