@@ -1,3 +1,4 @@
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
 export class Endpoints {
-  static posts = "https://jsonplaceholder.typicode.com/posts";
+  static posts = BASE_URL + "posts";
 }
