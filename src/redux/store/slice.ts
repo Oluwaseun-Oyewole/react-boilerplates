@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { TodoSlice as api } from "./query";
+import { createSlice } from '@reduxjs/toolkit';
+import { TodoSlice as api } from './query';
 
 const initialState = {
   todos: [],
@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const jobSlice = createSlice({
-  name: "allJobs",
+  name: 'allJobs',
   initialState,
   reducers: {},
   extraReducers: (builder) => {

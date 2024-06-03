@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
-import Navigation from "../../components/custom/nav";
-import { dashboardNav } from "../../helper/constants";
+import { Outlet } from 'react-router-dom';
+import Navigation from '../../components/custom/nav';
+import { dashboardNav } from '../../helper/constants';
 
 const DashboardLayout = () => {
   return (

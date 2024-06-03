@@ -1,6 +1,6 @@
-import Request from "../../axios";
+import Request from '../../axios';
 
-import { Endpoints } from "../endpoints";
+import { Endpoints } from '../endpoints';
 
 export const allPosts = async () => {
   try {

@@ -2,3 +2,8 @@ node_modules
 # Ignore artifacts:
 build
 coverage
+dist
+coverage
+.eslintcache
+yarn.lock
+package-lock.json

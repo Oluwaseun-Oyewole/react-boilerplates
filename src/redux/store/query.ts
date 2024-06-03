@@ -1,5 +1,5 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { BASE_URL } from "../../services/endpoints";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { BASE_URL } from '../../services/endpoints';
 
 const rawBaseQuery = fetchBaseQuery({
   baseUrl: BASE_URL,
@@ -18,10 +18,10 @@ const rawBaseQuery = fetchBaseQuery({
 // };
 
 export const TodoSlice = createApi({
-  reducerPath: "todos",
+  reducerPath: 'todos',
   // baseQuery: dynamicBaseQuery,
   baseQuery: rawBaseQuery,
-  tagTypes: ["Todos"],
+  tagTypes: ['Todos'],
   // keepUnusedDataFor: 30,
   endpoints: (builder) => ({
     getAllTodos: builder.query({
@@ -30,7 +30,7 @@ export const TodoSlice = createApi({
           url: `todos`,
         };
       },
-      providesTags: ["Todos"],
+      providesTags: ['Todos'],
       keepUnusedDataFor: 0,
     }),
   }),

@@ -1,9 +1,9 @@
-import { AxiosError } from "axios";
-import { useQuery } from "react-query";
-import Request from "../../../axios";
-import Loader from "../../../components/custom/loader";
-import { albumsValidationSchema } from "../../../schema/albums";
-import { BASE_URL } from "../../../services/endpoints";
+import { AxiosError } from 'axios';
+import { useQuery } from 'react-query';
+import Request from '../../../axios';
+import Loader from '../../../components/custom/loader';
+import { albumsValidationSchema } from '../../../schema/albums';
+import { BASE_URL } from '../../../services/endpoints';
 
 export interface AlbumInterface {
   userId: number;
@@ -14,7 +14,7 @@ export interface AlbumInterface {
 
 const Albums = () => {
   const { error, data, isLoading } = useQuery({
-    queryKey: ["albums"],
+    queryKey: ['albums'],
     queryFn: () => Request.get(`${BASE_URL}albums`).then((data) => data),
     onError: (err: AxiosError) => {
       console.log(err?.response?.status);

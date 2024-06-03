@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { TodoSlice } from "../redux/store/query";
-import rootReducer from "./root.reducers";
+import { configureStore } from '@reduxjs/toolkit';
+import { TodoSlice } from '../redux/store/query';
+import rootReducer from './root.reducers';
 
 export const store = () => {
   return configureStore({
@@ -10,10 +10,10 @@ export const store = () => {
     },
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({}).concat([TodoSlice.middleware]),
-    devTools: process.env.NODE_ENV !== "production",
+    devTools: process.env.NODE_ENV !== 'production',
   });
 };
 
 export type AppStore = ReturnType<typeof store>;
-export type RootState = ReturnType<AppStore["getState"]>;
-export type AppDispatch = AppStore["dispatch"];
+export type RootState = ReturnType<AppStore['getState']>;
+export type AppDispatch = AppStore['dispatch'];

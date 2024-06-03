@@ -1,10 +1,10 @@
-import { FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { Routes } from "../../../routes/routes";
+import { FormEvent, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Routes } from '../../../routes/routes';
 
 const initialFormValues = {
-  password: "",
-  email: "",
+  password: '',
+  email: '',
 };
 const Login = () => {
   const [submitted, setSubmitted] = useState(false);

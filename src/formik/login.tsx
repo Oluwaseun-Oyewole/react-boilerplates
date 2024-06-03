@@ -1,6 +1,6 @@
-import { Form, Formik } from "formik";
-import { ZodError } from "zod";
-import { LoginFormValues, loginValidationSchema } from "../schema/login";
+import { Form, Formik } from 'formik';
+import { ZodError } from 'zod';
+import { LoginFormValues, loginValidationSchema } from '../schema/login';
 
 const LoginFormikForm = () => {
   const validateForm = (values: LoginFormValues) => {
@@ -16,7 +16,7 @@ const LoginFormikForm = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSubmit = async (values: LoginFormValues, { resetForm }: any) => {
     try {
-      console.log("values -- ", values);
+      console.log('values -- ', values);
       resetForm();
     } catch (error) {
       return;
@@ -27,8 +27,8 @@ const LoginFormikForm = () => {
     <div>
       <Formik
         initialValues={{
-          email: "",
-          password: "",
+          email: '',
+          password: '',
         }}
         validate={validateForm}
         onSubmit={handleSubmit}

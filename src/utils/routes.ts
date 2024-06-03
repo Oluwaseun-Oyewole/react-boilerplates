@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
 export const lazyLoadAuthRoutes = (page: string) =>
   lazy(() => import(`../pages/auth/${page}/index.tsx`));

@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
-import ErrorPage from "../components/custom/error";
-import AuthLayout from "../layouts/auth";
-import DashboardLayout from "../layouts/dashboard";
-import { authenticationRoutes } from "./auth.routes";
-import { dashboardRoutes } from "./dashboard.routes";
-import { Home } from "./lazy";
-import { Routes } from "./routes";
+import { createBrowserRouter } from 'react-router-dom';
+import ErrorPage from '../components/custom/error';
+import AuthLayout from '../layouts/auth';
+import DashboardLayout from '../layouts/dashboard';
+import { authenticationRoutes } from './auth.routes';
+import { dashboardRoutes } from './dashboard.routes';
+import { Home } from './lazy';
+import { Routes } from './routes';
 
 const routes = createBrowserRouter([
   {

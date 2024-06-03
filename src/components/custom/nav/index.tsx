@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { Routes } from "../../../routes/routes";
-import { NavInterface } from "./type";
+import { Link } from 'react-router-dom';
+import { Routes } from '../../../routes/routes';
+import { NavInterface } from './type';
 
 const Navigation = ({ routes }: NavInterface) => {
   return (

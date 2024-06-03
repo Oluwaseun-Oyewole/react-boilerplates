@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import Loader from "../../components/custom/loader";
-import { postValidationSchema } from "../../schema/posts";
-import { allPosts } from "../../services/posts";
-import { PostResponseBody } from "../../services/posts/types";
+import { useEffect, useState } from 'react';
+import Loader from '../../components/custom/loader';
+import { postValidationSchema } from '../../schema/posts';
+import { allPosts } from '../../services/posts';
+import { PostResponseBody } from '../../services/posts/types';
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const fetchPosts = async () => {
     setLoading(true);
     try {
@@ -17,7 +17,7 @@ const Dashboard = () => {
       }
       setLoading(false);
     } catch (error) {
-      setError("Error while fetching....");
+      setError('Error while fetching....');
       setLoading(false);
       return;
     }

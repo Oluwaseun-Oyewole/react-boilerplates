@@ -1,6 +1,6 @@
-import Navigation from "../components/custom/nav";
-import { navLinks } from "../helper/constants";
-import useCounter from "../hooks/useContext";
+import Navigation from '../components/custom/nav';
+import { navLinks } from '../helper/constants';
+import useCounter from '../hooks/useContext';
 
 const Home = () => {
   const contextValue = useCounter();

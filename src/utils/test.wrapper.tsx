@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { RouterProvider, createMemoryRouter } from "react-router-dom";
+import { ReactNode } from 'react';
+import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 
 export type routeType = { path: string; element: ReactNode };
 

@@ -1,5 +1,5 @@
 /* eslint-disable valid-jsdoc */
-import Axios, { AxiosRequestConfig } from "axios";
+import Axios, { AxiosRequestConfig } from 'axios';
 
 const Request = {
   /**

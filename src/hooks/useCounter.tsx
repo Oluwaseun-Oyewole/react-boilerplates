@@ -1,4 +1,4 @@
-import useAppContext from "./useContext";
+import useAppContext from './useContext';
 
 export const useCounter = () => {
   const contextValues = useAppContext();

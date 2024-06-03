@@ -1,6 +1,6 @@
-import { Navigate, RouteObject } from "react-router-dom";
-import { Albums, Dashboard, Products } from "./lazy";
-import { Routes } from "./routes";
+import { Navigate, RouteObject } from 'react-router-dom';
+import { Albums, Dashboard, Products } from './lazy';
+import { Routes } from './routes';
 
 export const dashboardRoutes = () => {
   return [

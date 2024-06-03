@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { useRouteError } from 'react-router-dom';
 
 export default function ErrorPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

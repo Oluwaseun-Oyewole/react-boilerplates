@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { AppContext, ContextInitialInterface } from "../context";
+import { useContext } from 'react';
+import { AppContext, ContextInitialInterface } from '../context';
 
 const useAppContext = () => {
   const context: ContextInitialInterface = useContext(AppContext);

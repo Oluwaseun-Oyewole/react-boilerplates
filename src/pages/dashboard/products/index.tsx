@@ -1,7 +1,7 @@
-import Loader from "../../../components/custom/loader";
-import { useGetAllTodosQuery } from "../../../redux/store/query";
-import { TodosInterface } from "../../../redux/types";
-import { todoValidationSchema } from "../../../schema/todos";
+import Loader from '../../../components/custom/loader';
+import { useGetAllTodosQuery } from '../../../redux/store/query';
+import { TodosInterface } from '../../../redux/types';
+import { todoValidationSchema } from '../../../schema/todos';
 // import { useAppSelector } from "../../../store/hook";
 
 const Products = () => {
